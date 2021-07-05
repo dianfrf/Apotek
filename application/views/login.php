@@ -37,7 +37,7 @@
                 ?>
 								<p class="lead">Login Admin Apotek K24</p>
 							</div>
-							<form class="form-auth-small" action="<?=base_url('index.php/website/proses_login')?>" method="post">
+							<form class="form-auth-small" action="<?=base_url('website/proses_login')?>" method="post">
 								<div class="form-group">
 									<label class="control-label sr-only">Username</label>
 									<input type="text" class="form-control" name="username" placeholder="Username">

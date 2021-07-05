@@ -22,7 +22,7 @@
                 <td><?=$i->nama_kategori;?></td>
                 <td><?=$i->harga;?></td>
                 <td style="text-align:center">
-                    <a href="<?=base_url('index.php/cart/add_cart/'.$i->id_obat)?>" class="btn btn-success btn-sm">
+                    <a href="<?=base_url('cart/add_cart/'.$i->id_obat)?>" class="btn btn-success btn-sm">
                         <i class="glyphicon glyphicon-shopping-cart"></i> Pesan
                     </a>
                 </td>
@@ -35,7 +35,7 @@
     </div>
     <div class="col-md-6">
       <div class="table-responsive">
-        <form action="<?=base_url('index.php/cart/simpan')?>" method="post">
+        <form action="<?=base_url('cart/simpan')?>" method="post">
           <table class="table">
             <tr>
               <th>ID Obat</th>
@@ -60,7 +60,7 @@
               <td><?=$items['price']?></td>
               <td><?=$items['subtotal']?></td>
               <td>
-                <a href="<?=base_url('index.php/cart/hapus_item/'.$items['rowid'])?>" onclick="return confirm('Apakah yakin?')" class="btn btn-danger">
+                <a href="<?=base_url('cart/hapus_item/'.$items['rowid'])?>" onclick="return confirm('Apakah yakin?')" class="btn btn-danger">
                   <i class="glyphicon glyphicon-remove"></i>
                 </a>
               </td>

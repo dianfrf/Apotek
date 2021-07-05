@@ -42,7 +42,7 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?=base_url()?>assets/img/user.png" class="img-circle" alt="Avatar"> <span><?=$_SESSION['nama_admin']?></span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
-								<li><a href="<?=base_url('index.php/website/logout')?>"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+								<li><a href="<?=base_url('website/logout')?>"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -55,12 +55,12 @@
 			<div class="sidebar-scroll">
 				<nav>
 					<ul class="nav">
-						<li><a href="<?=base_url('index.php/website/dashboard')?>" class=""><i class="glyphicon glyphicon-home"></i> <span>Dashboard</span></a></li>
-						<li><a href="<?=base_url('index.php/website/obat')?>" class=""><i class="glyphicon glyphicon-book"></i> <span>Daftar Obat</span></a></li>
-						<li><a href="<?=base_url('index.php/kategori')?>" class=""><i class="glyphicon glyphicon-list"></i> <span>Daftar Kategori</span></a></li>
-						<li><a href="<?=base_url('index.php/pembeli')?>" class=""><i class="glyphicon glyphicon-user"></i> <span>Daftar Pembeli</span></a></li>
-						<li><a href="<?=base_url('index.php/cart')?>" class=""><i class="glyphicon glyphicon-list-alt"></i> <span>Transaksi</span></a></li>
-						<li><a href="<?=base_url('index.php/cart/pesanan')?>" class=""><i class="glyphicon glyphicon-bookmark"></i> <span>Daftar Pesanan</span></a></li>
+						<li><a href="<?=base_url('website/dashboard')?>" class=""><i class="glyphicon glyphicon-home"></i> <span>Dashboard</span></a></li>
+						<li><a href="<?=base_url('website/obat')?>" class=""><i class="glyphicon glyphicon-book"></i> <span>Daftar Obat</span></a></li>
+						<li><a href="<?=base_url('kategori')?>" class=""><i class="glyphicon glyphicon-list"></i> <span>Daftar Kategori</span></a></li>
+						<li><a href="<?=base_url('pembeli')?>" class=""><i class="glyphicon glyphicon-user"></i> <span>Daftar Pembeli</span></a></li>
+						<li><a href="<?=base_url('cart')?>" class=""><i class="glyphicon glyphicon-list-alt"></i> <span>Transaksi</span></a></li>
+						<li><a href="<?=base_url('cart/pesanan')?>" class=""><i class="glyphicon glyphicon-bookmark"></i> <span>Daftar Pesanan</span></a></li>
 					</ul>
 				</nav>
 			</div>

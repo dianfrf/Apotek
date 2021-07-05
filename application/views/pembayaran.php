@@ -55,5 +55,5 @@
 </div>
 <script type="text/javascript">
 	 window.print();
-	 location.href="<?=base_url('index.php/cart/pesanan')?>";
+	 location.href="<?=base_url('cart/pesanan')?>";
 </script>

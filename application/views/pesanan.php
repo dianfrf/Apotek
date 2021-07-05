@@ -23,7 +23,7 @@
               <?php
               if ($psn->bukti == false): ?>
                   <a data-toggle="modal" data-target="#modalkon<?= $psn->id_transaksi;?>" style="text-decoration:none" class="btn btn-success">Konfirmasi</a> |
-                  <a href="<?=base_url('index.php/cart/hapus/'.$psn->id_transaksi)?>" style="text-decoration:none" class="btn btn-danger" onclick="return confirm('Apakah yakin?')">Batalkan</a>
+                  <a href="<?=base_url('cart/hapus/'.$psn->id_transaksi)?>" style="text-decoration:none" class="btn btn-danger" onclick="return confirm('Apakah yakin?')">Batalkan</a>
               <?php else: ?> Lunas
               <?php endif ?>
             </td>
@@ -88,7 +88,7 @@
       <h4 class="modal-title" id="myModalLabel">Upload Bukti Pembayaran</h4>
     </div>
     <div class="modal-body">
-      <form action="<?=base_url('index.php/cart/proses_upload/'.$psn->id_transaksi)?>" method="post" enctype="multipart/form-data">
+      <form action="<?=base_url('cart/proses_upload/'.$psn->id_transaksi)?>" method="post" enctype="multipart/form-data">
         <input type="hidden" name="id_transaksi" value="<?=$psn->id_transaksi?>">
         <input type="file" name="bukti">
         <br>

@@ -35,7 +35,7 @@
                     <a data-toggle="modal" data-target="#modal_edit<?= $i->id_obat;?>" class="btn btn-info btn-sm">
                         <i class="glyphicon glyphicon-pencil"></i>Ubah
                     </a>
-                    <a href="<?=base_url('index.php/website/hapus/'.$i->id_obat)?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah yakin?')">
+                    <a href="<?=base_url('website/hapus/'.$i->id_obat)?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah yakin?')">
                         <i class="glyphicon glyphicon-remove"></i>Hapus
                     </a>
                 </td>
@@ -54,7 +54,7 @@
           <h4 class="modal-title" id="myModalLabel">Tambah Obat</h4>
         </div>
         <div class="modal-body">
-          <form action="<?=base_url('index.php/website/tambah')?>" method="post" class="form-horizontal">
+          <form action="<?=base_url('website/tambah')?>" method="post" class="form-horizontal">
             <div class="form-group">
               <label class="col-sm-3 control-label">Nama Obat</label>
               <div class="col-sm-8">
@@ -105,7 +105,7 @@
           <h4 class="modal-title" id="myModalLabel">Ubah Data Obat</h4>
         </div>
         <div class="modal-body">
-          <form action="<?php echo base_url().'index.php/website/ubah'?>" method="post" class="form-horizontal">
+          <form action="<?php echo base_url().'website/ubah'?>" method="post" class="form-horizontal">
             <div class="form-group">
               <label class="col-sm-3 control-label">Nama Obat</label>
               <div class="col-sm-8">
